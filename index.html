@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selamat Datang Di WebSite Kelas XII TKR 2</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <div style="color: white">
+                <h3>TEKNIK KENDARAAN RINGAN</h3>
+            </div>
+            <img alt="" height="70" src="Logo TKR.png">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#" onclick="toggleCards('siswaCards')">Data Siswa</a></li>
+            <li><a href="#" onclick="toggleCards('guruCards')">Data Guru</a></li>
+            <li><a href="#" onclick="toggleCards('piketCards')">Piket Kelas</a></li>
+            <li><a href="#" onclick="toggleCards('strukturCards')">Struktur Kelas</a></li>
+            <li><a href="#" onclick="toggleCards('jadwalPelajaran')">Jadwal Pelajaran</a></li>
+            <li><a href="#" onclick="toggleCards('kegiatanKelas')">Kegiatan Kelas</a></li>
+            <li><a href="#" onclick="toggleCards('gallery')">Buka Galeri</a></li>
+
+        </ul>
+        <div id="siswaCards" class="card-container" style="display: none;">
+            <div class="card">
+                <img src="absen1.jpg" alt="Foto Abdullah Ali Havid">
+                <h3>Galih Billy Yudhistira</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0076526228</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-02-19</p>
+                <p>Alamat: Jalan Dukuh Seboto</p>
+                <p>RT: 10</p>
+                <p>RW: 2</p>
+                <p>Dusun: Seboto</p>
+                <p>Keluranhan: Desa/Kel. Ngampelrejo</p>
+                <p>Kecamatan: Kec.Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen2.jpg" alt="Foto Achmad Rafellino Dwi Kurniawan">
+                <h3>Gilang Dwi Stefani</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0056312605</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2005-11-19</p>                    
+                <p>Alamat: Dsn. Terangrejo</p>
+                <p>RT: 8</p>
+                <p>RW: 1</p>
+                <p>Dusun: Terangrejo</p>
+                <p>Kelurahan: Desa/Kel. Temaji</p>               
+                <p>Kecamatan: Kec.Jenu</p>
+            </div>
+            <div class="card">
+                <img src="absen3.jpg" alt="Foto Adtya Pratama Putra Wahyudianto">
+                <h3>Hendra Andika Putra</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0079874270</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-01-03</p>
+                <p>Alamat: Jalan Raya Desa Ngampelrejo</p>
+                <p>RT: 2</p>
+                <p>RW: 1</p>
+                <p>Dusun: Ngampelrejo</p>
+                <p>Kelurahan: Desa/Kel. Ngampelrejo</p>
+                <p>Kecamatan: Kec.Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen4.jpg" alt="Foto Afdhal Ulum">
+                <h3>Heril Sampurno</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0079033436</p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2007-04-14</p>
+                    <p>Alamat: Jalan Raya Desa Socorejo</p>
+                    <p>RT: 5</p>
+                    <p>RW: 1</p>
+                    <p>Dusun: Socorejo</p>
+                    <p>Kelurahan: Desa/Kel. Socorejo</p>
+                    <p>Kecamatan: Kec.Jenu</p>
+            </div>
+            <div class="card">
+                <img src="absen5.jpg" alt="Foto Ahmad Arif Muzaki">
+                <h3>Imam Mulyadi</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0077502381</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-07-20</p>
+                <p>Alamat: Desa Sembungin</p>
+                <p>RT: 1</p>
+                <p>RW: 3</p>
+                <p>Dusun: Trapet</p>
+                <p>Kelurahan: Desa/Kel. Sembungin</p>
+                <p>Kecamatan: Kec.Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen6.jpg" alt="Foto Ahmad Fadli Nur Ibad">
+                <h3>Irfandi Bagus Herdian</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0062897662</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2006-08-03</p>
+                <p>Alamat: Dsn. Kandang</p>
+                <p>RT: 10</p>
+                <p>RW: 3</p>
+                <p>Dusun: Kandang</p>
+                <p>Kelurahan: Desa/Kel. Margosuko</p>
+                <p>Kecamatan: Kec.Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen7.jpg" alt="Foto Ahmad Risky Putra Indrawan">
+                <h3>Jauharul Asrof</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0075318655</p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2007-04-25</p>
+                    <p>Alamat: Dsn. Sumber Arum</p>
+                    <p>RT: 2</p>
+                    <p>RW: 4</p>
+                    <p>Dusun: Sumber Arum</p>
+                    <p>Kelurahan: Desa/Kel. Sawir</p>
+                    <p>Kecamatan: Kec.Tambakboyo</p>
+            </div>
+            <div class="card">
+                <img src="absen8.jpg" alt="Foto Ahmad Zaenal Prayogi">
+                <h3>Jimly Ahmad Assidqe</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0071759843</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-07-24</p>
+                <p>Alamat: Jalan Raya Pantura</p>
+                <p>RT: 1</p>
+                <p>RW: 2</p>
+                <p>Dusun: Kedungringin</p>
+                <p>Kelurahan: Desa/Kel. Kedungringin</p>
+                <p>Kecamatan: Kec.Sedan</p>
+            </div>
+            <div class="card">
+                <img src="absen9.jpg" alt="Foto Ahmad Zaeni">
+                <h3>Kelvin Yudha Mulya Putra</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0068353804</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2006-08-30</p>
+                <p>Alamat: Ds.Sidomulyo</p>
+                <p>RT: 7</p>
+                <p>RW: 2</p>
+                <p>Dusun: Sriwing</p>
+                <p>Keluranhan: Desa/Kel. Sidomulyo</p>
+                <p>Kecamatan: Kec.Bancar</p>
+            </div>
+            <div class="card">
+                <img src="0.jpg" alt="Foto Aldi Rahmaka">
+                <h3>Khasanul Ari Qobir Reza</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0068993462  </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-12-12</p>
+                    <p>Alamat: Jalan Dukuh Tajman</p>
+                    <p>RT: 7</p>
+                    <p>RW: 2</p>
+                    <p>Dusun: Tajman</p>
+                    <p>Kelurahan: Desa/Kel. Ngampelrejo</p>
+                    <p>Kecamatan: Kec.Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen11.jpg" alt="Foto Aldi Rizki Utomo">
+                <h3>Khoril Febian Tama</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0073515533  </p>
+                    <p>Tampat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2007-02-12</p>
+                    <p>Alamat: Tasikharjo</p>
+                    <p>RT: 1</p>
+                    <p>RW: 1</p>
+                    <p>Dusun: Boro</p>
+                    <p>Kelurahan: Desa/Kel. Tasikharjo</p>
+                    <p>Kecamatan: Kec.Jenu</p>
+            </div>
+            <div class="card">
+                <img src="absen12.jpg" alt="Foto Alfin Maulana">
+                <h3>Kia Afga Neza</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0079050984   </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-05-10</p>
+                <p>Alamat: Wolutengah</p>
+                <p>RT: 3</p>
+                <p>RW: 3</p>
+                <p>Dusun: Wolutengah</p>
+                <p>Kelurahan: Desa/Kel. Wolutengah</p>
+                <p>Kecamatan: Kec.Kerek</p>
+            </div>
+            <div class="card">
+                <img src="absen13.jpg" alt="Foto Andik Saputro">
+                <h3>Komarudin Ilham Romadon</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0063827965    </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-10-19</p>
+                    <p>Alamat: Ds. Sidomulyo</p>
+                    <p>RT: 7</p>
+                    <p>RW: 2</p>
+                    <p>Dusun: Sriwing</p>
+                    <p>Kelurahan: Desa/Kel. Sidomulyo</p>
+                    <p>Kecamatan: Kec. Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen14.jpg" alt="Foto Andika Adi Pratama">
+                <h3>Langgeng Supriono</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0069907824     </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-05-16</p>
+                    <p>Alamat: Jalan Raya Pasatan</p>
+                    <p>RT: 5</p>
+                    <p>RW: 3</p>
+                    <p>Dusun: Pasatan</p>
+                    <p>Kelurahan: Desa/Kel. Cokrowati</p>
+                    <p>kecamatan: Kec. Tambakboyo</p>
+            </div>
+            <div class="card">
+                <img src="absen15.jpg" alt="Foto Andika Ardi Anto">
+                <h3>Laxsamana Viorentine Kurnida</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelas: Laki-Laki</p>
+                    <p>NISN: 0066968794     </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-11-01</p>
+                    <p>Alamat: Dsn. Jegong</p>
+                    <p>RT: 6</p>
+                    <p>RW: 2</p>
+                    <p>Dusun: Jegong</p>
+                    <p>Kelurahan: Desa/Kel. Margosuko</p>
+                    <p>Kecamatan: Kec. Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen16.jpg" alt="Foto Ardian Dwi Nugroho">
+                <h3>Ludji Ardian</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0073931674     </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-03-25</p>
+                <p>Alamat: Dusun Sidorejo</p>
+                <p>RT: 5</p>
+                <p>RW: 9</p>
+                <p>Dusun: Sidorejo</p>
+                <p>Kelurahan: Desa/Kel. Gaji</p>
+                <p>Kecamatan: Kec. Kerek</p>
+            </div>
+            <div class="card">
+                <img src="absen17.jpg" alt="Foto Azzam Maulana">
+                <h3>M. Ali Irfan</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0076740387    </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2007-03-17</p>
+                    <p>Alamat: Jl. Raya Desa Remen</p>
+                    <p>RT: 2</p>
+                    <p>RW: 2</p>
+                    <p>Dusun: Remen</p>
+                    <p>Kelurahan: Desa/Kel. Remen</p>
+                    <p>Kecamatan: Kec. Jenu</p>
+            </div>
+            <div class="card">
+                <img src="0.jpg" alt="Foto Bagus Candra">
+                <h3>M. Khoirul Fatihin</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0054082922     </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2005-09-08</p>
+                    <p>Alamat: Jln. Tirtonadi</p>
+                    <p>RT: 3</p>
+                    <p>RW: 1</p>
+                    <p>Dusun: Temaji</p>
+                    <p>Kelurahan: Desa/Kel. Temaji</p>
+                    <p>Kecamatan: Kec. Jenu</p>
+            </div>
+            <div class="card">
+                <img src="absen19.jpg" alt="Foto Bayu Aditya">
+                <h3>M. Nurul Ibda' Binnafsik</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0044153765    </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-03-16</p>
+                    <p>Alamat: Dsn. Sumber Rejo</p>
+                    <p>RT: 2</p>
+                    <p>RW: 1</p>
+                    <p>Dusun: Sumber Rejo</p>
+                    <p>Kelurahan: Desa/Kel. Sawir</p>
+                    <p>Kecamatan: Kec. Tambakboyo</p>
+            </div>
+            <div class="card">
+                <img src="absen20.jpg" alt="Foto Bima Dwi Putra">
+                <h3>M. Ramadhan Edi Saputra</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0069620286    </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-10-11</p>
+                    <p>Alamat: Jalan Tirtonadi</p>
+                    <p>RT: 1</p>
+                    <p>RW: 3</p>
+                    <p>Dusun: Wonorejo</p>
+                    <p>Kelurahan: Desa/Kel. Socorejo</p>
+                    <p>Kecamatan: Kec. Jenu</p>
+            </div>
+            <div class="card">
+                <img src="absen21.jpg" alt="Foto Dela Dwi Sari">
+                <h3>Meddy Kuma Trisetyo </h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0075224665    </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-04-29</p>
+                <p>Alamat: Dusun Pasatan</p>
+                <p>RT: 1</p>
+                <p>RW: 3</p>
+                <p>Dusun: Pasatan</p>
+                <p>Kelurahan: Desa/Kel. Cokrowati</p>
+                <p>Kecamatan: Kec. Tambakboyo</p>
+            </div>
+            <div class="card">
+                <img src="0.jpg" alt="Foto Dimas Rian">
+                <h3>Moch Chamal Fikriyanto</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0053101465    </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2005-07-11</p>
+                <p>Alamat: Dsn. Pulogede</p>
+                <p>RT: 2</p>
+                <p>RW: 1</p>
+                <p>Dusun: Pulo</p>
+                <p>Kelurahan: Desa/Kel. Pulogede</p>
+                <p>Kecamatan: Kec. Tambakboyo</p>
+            </div>
+            <div class="card">
+                <img src="absen23.jpg" alt="Foto Eko Prasetyo">
+                <h3>Moh. Aril Fatulil Fazar</h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0063240257    </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-11-19</p>
+                    <p>Alamat: Remen</p>
+                    <p>RT: 1</p>
+                    <p>RW: 5</p>
+                    <p>Dusun: Remen</p>
+                    <p>Kelurahan: Desa/Kel. Remen</p>
+                    <p>Kecamatan: Kec. Jenu</p>
+            </div>
+            <div class="card">
+                <img src="absen24.jpg" alt="Foto Eko Rahman">
+                <h3>Mohammad Khairul Frendy</h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0073132908    </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-04-22</p>
+                <p>Alamat: Sumurgeneng</p>
+                <p>RT: 3</p>
+                <p>RW: 2</p>
+                <p>Dusun: Sumurgeneng</p>
+                <p>Kelurahan: Desa/Kel. Sumurgeneng</p>
+                <p>Kecamatan: Kec. Jenu</p>
+            </div>
+            <div class="card">
+                <img src="absen25.jpg" alt="Foto Evan Reza">
+                <h3>Mohammad Hafid Rahman </h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0067706309    </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2006-05-31</p>
+                    <p>Alamat: Raya Gaji</p>
+                    <p>RT: 6</p>
+                    <p>RW: 3</p>
+                    <p>Dusun: Sidomulyo</p>
+                    <p>Kelurahan: Desa/Kel. Pulogede</p>
+                    <p>Kecamatan: Kec. Kerek</p>
+            </div>
+            <div class="card">
+                <img src="absen26.jpg" alt="Foto Fandi">
+                <h3>Mohammad Yasirul Akmal </h3>
+                    <p>Kelas: XII TKR 2</p>
+                    <p>Jenis Kelamin: Laki-Laki</p>
+                    <p>NISN: 0073749977     </p>
+                    <p>Tempat Lahir: Tuban</p>
+                    <p>Tgl Lahir: 2007-03-14</p>
+                    <p>Alamat: Jalan Desa Ngampelrejo</p>
+                    <p>RT: 1</p>
+                    <p>RW: 1</p>
+                    <p>Dusun: Ngampelrejo</p>
+                    <p>Kelurahan: Desa/Kel. Ngampelrejo</p>
+                    <p>Kecamatan: Kec. Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen27.jpg" alt="Foto Farhan">
+                <h3>Muchamad Davan Aditya Mada </h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0057543352    </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2005-11-09</p>
+                <p>Alamat: Dusun Pulogede</p>
+                <p>RT: 1</p>
+                <p>RW: 3</p>
+                <p>Dusun: Pulo</p>
+                <p>Kelurahan: Desa/Kel. Pulogede</p>
+                <p>Kecamatan: Kec. Tambakboyo</p>
+            </div>
+            <div class="card">
+                <img src="0.jpg" alt="Foto Fathur">
+                <h3>Muhamad Nabil </h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0078454435    </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-05-23</p>
+                <p>Alamat: Jalan Desa Bogorrejo</p>
+                <p>RT: 2</p>
+                <p>RW: 2</p>
+                <p>Dusun: Ngembak</p>
+                <p>kelurahan: Desa/Kel. Bogorrejo</p>
+                <p>Kecamatan: Kec. Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen29.jpg" alt="Foto Geri">
+                <h3>Muhammad Gaguh Tondo Handoko </h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0076484929     </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-07-20</p>
+                <p>Alamat: Jalan Desa Sukoharjo</p>
+                <p>RT: 13</p>
+                <p>RW: 2</p>
+                <p>Dusun: Mager Sari</p>
+                <p>Kelurahan: Desa/Kel. Sukuharjo</p>
+                <p>Kecamatan: Kec. Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen30.jpg" alt="Foto Gilang">
+                <h3>Muhammad Inzaghi Affafuddin </h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0071448189      </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-08-10</p>
+                <p>Alamat: Jalan Raya Gandon</p>
+                <p>RT: 4</p>
+                <p>RW: 1</p>
+                <p>Dusun: Gadon</p>
+                <p>Kelurahan: Desa/Kel. Gadon</p>
+                <p>Kecamatan: Kec. Tambakboyo</p>
+            </div>
+            <div class="card">
+                <img src="absen31.jpg" alt="Foto Gilang">
+                <h3>Muhammad Rudy Sasongko </h3>
+                <p>Kelas:XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0064868895     </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2006-01-18</p>
+                <p>Alamat: Tasikharjo</p>
+                <p>RT: 3</p>
+                <p>RW: 1</p>
+                <p>Dusun: Boro</p>
+                <p>Kelurahan: Desa/Kel. Tasikharjo</p>
+                <p>Kecamatan: Kec. Jenu</p>
+            </div>
+            <div class="card">
+                <img src="0.jpg" alt="Foto Gilang">
+                <h3>Mukhamad Ars Windaka </h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0072793006     </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2007-01-17</p>
+                <p>Alamat: Jalan Desa Ngampelrejo</p>
+                <p>RT: 1</p>
+                <p>RW: 1</p>
+                <p>Dusun: Ngampel</p>
+                <p>Kelurahan: Desa/Kel. Ngampelrejo</p>
+                <p>Kecamatan: Kec. Bancar</p>
+            </div>
+            <div class="card">
+                <img src="absen33.jpg" alt="Foto Gilang">
+                <h3>Mukhlis </h3>
+                <p>Kelas: XII TKR 2</p>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>NISN: 0068776267     </p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 2006-09-24</p>
+                <p>Alamat: Dsn. Sumber Rejo</p>
+                <p>RT: 1</p>
+                <p>RW: 1</p>
+                <p>Dusun: Sumber Rejo</p>
+                <p>Kelurahan: Desa/Kel. Sawir</p>
+                <p>kecamatan: Kec. Tambakboyo</p>
+            </div>
+        </div>
+        <div id="guruCards" class="card-container" style="display: none;">
+            <div class="card">
+                <img src="bu_ika.jpg" alt="Foto Ahmad Zainuri">
+                <h3>Rohimatus Sholihah,S.Pd.I.</h3>
+                <p>Jenis Kelamin: Perempuan</p>
+                <p>Tempat Lahir: Tuban</p>
+                <P>Tgl Lahir: 1989-04-08</P>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Pendidikan Agama Islam dan Budi Pekerti (PAI)</p>
+            </div>
+            <div class="card">
+                <img src="bu_mira.jpg" alt="Foto Ainun Nisa">
+                <h3>Miratush Sholihah,S.Pd.,Gr.</h3>
+                <p>Jenis Kelamin: Perempuan</p>
+                <p>Tempat Lahir: Tuban</p>
+                <P>Tgl Lahir: 1988-08-10</P>
+                <p>Status Kepegawaian: Honor Daerah TK.I Provinsi</p>
+                <p>Jabatan: Guru Bahasa Indonesia</p>
+            </div>
+            <div class="card">
+                <img src="bu_wahyu.jpg" alt="Foto Nuranisah">
+                <h3>Siti Wahyuningsih,S.Pd.</h3>
+                <p>Jenis Kelamin: Perempuan</p>
+                <p>Tempat Lahir: Tuban</p>
+                <P>Tgl Lahir: 1995-05-04</P>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Pendidikan Pancasila dan Kewarga Negaraan (PPKN)</p>
+            </div>
+            <div class="card">
+                <img src="bu_tika.jpg" alt="Foto Nuranisah">
+                <h3>Pratika Agustina Wulandari,S.Pd.</h3>
+                <p>Jenis Kelamin: Perempuan</p>
+                <p>Tempat Lahir: Tulungagung</p>
+                <P>Tgl Lahir: 1993-08-14</P>
+                <p>Status Kepegawaian: Honor Daerah TK.I Provinsi</p>
+                <p>Jabatan: Guru Muatan Lokal Bahasa Daerah</p>
+            </div>
+            <div class="card">
+                <img src="bu_eni.jpg" alt="Foto Nuranisah">
+                <h3>Eni Mahzumah,S.Pd.,Gr.</h3>
+                <p>Jenis Kelamin: Perempuan</p>
+                <p>Tempat Lahir: Lamongan</p>
+                <P>Tgl Lahir: 1993-02-09</P>
+                <p>Alamat : Sembungrejo, Kec. Merakurak</p>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Bahasa Inggris</p>
+            </div>
+            <div class="card">
+                <img src="pak_chusnul.jpg" alt="Foto Nuranisah">
+                <h3>Chusnul Yakin,S.Pd.,Gr.</h3>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>Tempat Lahir: Ujung Padang</p>
+                <p>Tgl Lahir: 1989-03-13</p>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Teknik Kendaraan Ringan</p>
+            </div>
+            <div class="card">
+                <img src="bu_yuni.jpg" alt="Foto Nuranisah">
+                <h3>Yuni Ponco Hariati,S.Pd.,Gr.</h3>
+                <p>Jenis Kelamin: Perempuan</p>
+                <p>Tempat Lahir: Blora</p>
+                <p>Tgl Lahir: 1979-06-07</p>
+                <p>Status Kepegawaian: PNS</p>
+                <p>Jabatan: Guru Projek Kretif dan Kewirausahaan (PKK)</p>
+            </div>
+            <div class="card">
+                <img src="pak_didik.jpg" alt="Foto Nuranisah">
+                <h3>Didik Arriyanto,S.Pd.,Gr.</h3>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 1982-10-21</p>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Matematika</p>
+            </div>
+            <div class="card">
+                <img src="pak_chusnul.jpg" alt="Foto Nuranisah">
+                <h3>Chusnul Yakin,S.Pd.Gr.</h3>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>Tempat Lahir: Ujung Padang</p>
+                <p>Tgl Lahir: 1989-03-13</p>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Projek Kreatif dan Kewirausahaan (PKK)</p>
+            </div>
+            <div class="card">
+                <img src="pak_sodikin.jpg" alt="Foto Nuranisah">
+                <h3>Muhammad Sodikin,S.Pd.</h3>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 1992-08-20</p>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Teknik Kendaraan Ringan</p>
+            </div>
+            <div class="card">
+                <img src="pak_ari.jpeg" alt="Foto Nuranisah">
+                <h3>Ari Hidayat,S.Pd.</h3>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>Tempat Lahir: Blitar</p>
+                <p>Tgl Lahir: 1986-04-27</p>
+                <p>Status Kepegawaian: PNS</p>
+                <p>Jabatan: Guru Teknik Kendaraan Ringan</p>
+            </div>
+            <div class="card">
+                <img src="bu_yulia.jpg" alt="Foto Nuranisah">
+                <h3>Yulia Suci Lusiana,S.Psi.</h3>
+                <p>Jenis Kelamin: Perempuan</p>
+                <p>Tempat Lahir: Magelang</p>
+                <p>Tgl Lahir: 1983-07-10</p>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Bimbingan dan Konseling/Konselor (BP/BK)</p>
+            </div>
+            <div class="card">
+                <img src="pak_saipul2.jpg" alt="Foto Nuranisah">
+                <h3>Mukhamad Syafiullah,S.Pd.</h3>
+                <p>Jenis Kelamin: Laki-Laki</p>
+                <p>Tempat Lahir: Tuban</p>
+                <p>Tgl Lahir: 1993-06-02</p>
+                <p>Status Kepegawaian: PPPK</p>
+                <p>Jabatan: Guru Teknik Kendaraan Ringan</p>
+            </div>
+            
+            
+        </div>
+
+        <div id="piketCards" class="card-container" style="display: none;">
+            <div class="card">
+                <h3>Senin</h3>
+                <p>Galih Billy Yudhistira</p>
+                <p>Gilang Dwi Stefani</p>
+                <p>Hendra Andika Putra</p>
+                <p>Heril Sampurno</p>
+                <p>Imam Mulyadi</p>
+                <p>Irfandi Bagus Herdian</p>
+                <p>Jauharul Asrof</p>
+            </div>
+            <div class="card">
+                <h3>Selasa</h3>
+                <p>Jimly Ahmad Assidqe</p>
+                <p>Kelvin Yudha Mulya Putra</p>
+                <p>Khasanul Ari Qobir Reza</p>
+                <p>Khoiril Febian Tama</p>
+                <p>Kia Afga Neza</p>
+                <p>Komarudin Ilham Romadon</p>
+            </div>
+            <div class="card">
+                <h3>Rabu</h3>
+                <p>Langgeng Supriyono</p>
+                <p>Laxamana Viorentine Kurnida</p>
+                <p>Ludji Ardian</p>
+                <p>M. Ali Irfan</p>
+                <p>M. Khoirul Fatihin</p>
+                <p>M. Nurul Ibda' Binnafsik</p>
+                <p>M. Ramadhan Edi Saputra</p>
+            </div>
+            <div class="card">
+                <h3>Kamis</h3>
+                <p>Meddy Kuma Trisetyo </p>
+                <p>Moch Chamal Fikriyanto</p>
+                <p>Moh. Aril Fatulil Fazar</p>
+                <p>Mohamad Khairul Frendi</p>
+                <p>Mohammad Hafid Rahman</p>
+                <p>Mohammad Yasirul Akmal</p>
+                <p>Mochammad Davan Aditya Mada</p>
+           </div>
+           <div class="card">
+                <h3>Jumat</h3>
+                <p>Muhamad Nabil</p>
+                <p>Muhammad Gaguh Tondo Handoko</p>
+                <p>Muhammad Inzaghi affafunddin</p>
+                <p>Muhammad Rudy Sasongko</p>
+                <p>Muhammad Ars Windaka</p>
+                <p>Mukhlis</p>
+           </div>
+        </div>
+
+        <div id="strukturCards" class="card-container" style="display: none;">
+         <img src="Kanyaah.jpg">
+        </div>
+
+        <div id="jadwalPelajaran" class="card-container" style="display: none;">
+            <table>
+                <tr>
+                    <th>Hari</th>
+                    <th>Pelajaran</th>
+                    <th>Waktu</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>B.Indo</td>
+                    <td>07:40 - 09:40</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>PAI</td>
+                    <td>10:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>B.Inggris</td>
+                    <td>12:30 - 13:50</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Produktif TKR</td>
+                    <td>13:50 - 14:30</td>               
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>BK</td>
+                    <td>14:30 - 15:10</td>
+                </tr>
+
+                <tr>
+                    <td>Selasa</td>
+                    <td>B.Jawa</td>
+                    <td>07:00 - 08:20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>PPKN</td>
+                    <td>08:20 - 09:40</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Produktif Pilihan TKR</td>
+                    <td>10:00 - 13:10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Matematika</td>
+                    <td>13:10 - 15:10</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Produktif TKR</td>
+                    <td>07:00 - 09:00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Projek Kreatif Dan Kewirausahaan</td>
+                    <td>09:00 - 11:20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Produktif TKR</td>
+                    <td>11:20 - 13:50</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>B.Inggris</td>
+                    <td>13:50 - 15:10</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Produktif TKR</td>
+                    <td>07:00 - 09:40</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Produktif TKR</td>
+                    <td>10:00 - 13:10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Produktif TKR</td>
+                    <td>13:10 - 15:10</td>
+                </tr>
+                <tr>
+                    <td>Jumat</td>
+                    <td>Projek Kreatif Dan Kewirausahaan</td>
+                    <td>07:00 - 08:20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Produktif TKR</td>
+                    <td>08:20 - 11:20</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="kegiatanKelas" class="card-container" style="display: none;">
+            <h3>Kegiatan Kelas</h3>
+            <p>Pada tanggal 29 Agustus 2024, kelas XII TKR 2, mengikuti tadarus yang diadakan oleh sekolah setiap pagi.</p>
+        </div>
+
+        <div id="gallery" class="gallery-container" style="display: none;">
+            <figure>
+                <img src="foto1.jpg" alt="Foto 1">
+            </figure>
+            <figure>
+                <img src="galeri1.jpg" alt="Foto 2">
+            </figure>
+            <figure>
+                <img src="foto2.jpg" alt="Foto 3">
+            </figure>
+            <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+        </div>
+        
+
+
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
